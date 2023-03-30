@@ -1,0 +1,26 @@
+.company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px 0;
+    &Name {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: #282828;
+    }
+    &Reviews {
+        display: flex;
+        gap: 10px;
+        &Stars {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        &Count {
+            color: #4A52BB;
+            font-weight: 400;
+        }
+    }
+}

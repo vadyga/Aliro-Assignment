@@ -1,0 +1,42 @@
+.rating {
+  display: flex;
+  gap: 5px;
+  font-size: 32px;
+  line-height: 1;
+  user-select: none;
+  &Star {
+    display: flex;
+    cursor: pointer;
+    stroke: #686868;
+    fill: transparent;
+    padding: 10px;
+    background-color: #F3F1FF;
+    border-radius: 3px;
+    stroke-width: 2;
+    &_hovered {
+      fill: none;
+      stroke: #4A52BB;
+    }
+    &_selected {
+      fill: #4A52BB;
+      stroke: #4A52BB;
+
+      svg {
+        animation: StarSelect 0.5s linear;
+      }
+    }
+  }
+}
+
+@keyframes StarSelect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
